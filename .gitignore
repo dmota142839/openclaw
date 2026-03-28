@@ -1,0 +1,62 @@
+# ─── Secrets & credentials ──────────────────────────────────────────────────
+.env
+credentials/
+identity/
+
+# ─── Runtime config (contains embedded API keys — manage locally) ────────────
+openclaw.json
+openclaw.json.*
+moltbot.json*
+lmstudio-provider.snapshot.json
+exec-approvals.json
+
+# ─── Agent session data ──────────────────────────────────────────────────────
+agents/
+# Agency-agents dir at top level is tracked (agent definitions)
+
+# ─── Logs & ephemeral state ──────────────────────────────────────────────────
+logs/
+cache/
+completions/
+browser/
+delivery-queue/
+canvas/
+cron/
+devices/
+sandboxes/
+
+# ─── Archives & backups ──────────────────────────────────────────────────────
+archive-*/
+*.bak
+*.bak-*
+
+# ─── Databases ───────────────────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+
+# ─── Nested git repos / runtime workspace dirs (managed separately) ──────────
+workspace/
+workspace-main/
+
+# ─── Agent runtime state (inside agency-agents definitions) ──────────────────
+agency-agents/*/.openclaw/
+agency-agents/*/HEARTBEAT.md*
+
+# ─── More runtime state ──────────────────────────────────────────────────────
+telegram/
+sandbox/
+subagents/
+antfarm/
+workspace-mc-*/
+workspace-gateway-*/
+tenacitos-initial-login.txt
+update-check.json
+
+# ─── Claude Code project data ────────────────────────────────────────────────
+.claude/
+
+# ─── OS artifacts ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
